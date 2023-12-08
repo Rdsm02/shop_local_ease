@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Local Ease</title>
+    <link rel="manifest" href="/manifest.json">
+    <!-- Adicione seus estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Shop Local Ease</h1>
+    </header>
+
+    <main>
+        <p>Welcome to Shop Local Ease</p>
+        <!-- conteúdo principal -->
+    </main>
+
+    <footer>
+        <p>Rodapé do aplicativo</p>
+    </footer>
+
+    <script>
+       
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado com sucesso!', registration);
+                    })
+                    .catch(error => {
+                        console.error('Falha ao registrar o Service Worker:', error);
+                    });
+            });
+        }
+
+    </script>
+</body>
+
+</html>

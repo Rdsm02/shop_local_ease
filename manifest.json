@@ -1,0 +1,16 @@
+{
+  "name": "Shop Local Ease",
+  "short_name": "ShopLocalEase",
+  "description": "Shop Local Ease, é um aplicativo de compras focado no comércio local, onde permite que usuários descubram e comprem produtos de lojas da sua vizinhança, com entregas ou retirada em loja.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "/img/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
